@@ -1,0 +1,22 @@
+{
+  "name": "mothers-day-2017",
+  "version": "1.0.0",
+  "description": "Digital card for Mother's Day 2017",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zsnydr/mothers-day-2017.git"
+  },
+  "author": "Zack Snyder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zsnydr/mothers-day-2017/issues"
+  },
+  "homepage": "https://github.com/zsnydr/mothers-day-2017#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
