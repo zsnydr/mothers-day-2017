@@ -1,3 +1,8 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(ps.woff);
+}
+
 *, *::before, *::after {
   padding: 0;
   margin: 0;
@@ -11,12 +16,13 @@
 }
 
 ::-webkit-scrollbar { 
-    display: none; 
+  display: none; 
 }
 
 #app {
   border: var(--border-main);
 }
+
 
 div > div:not(:empty) {
   height: 100vh;
@@ -55,6 +61,12 @@ div > div:not(:empty) {
   background-color: seagreen;
 }
 
+#first > span {
+  font-family: myFirstFont;
+  font-size: 14em;
+  color: #FFF;
+}
+
 #second {
   background-color: goldenrod;
 }
@@ -66,3 +78,23 @@ div > div:not(:empty) {
 #fourth {
   background-color: orangered;
 }
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+  #first > span {
+    font-size: 6em;
+  }
+
+  div > div:not(:empty) {
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  #first > span {
+    font-size: 2em;
+  }
+
+}
+
