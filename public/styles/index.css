@@ -7,34 +7,62 @@
 }
 
 :root {
-  --border-main: 1px solid grey;
+  --border-main: 1px solid #000;
 }
 
-.app {
-  /*height: 100vh;*/
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+#app {
   border: var(--border-main);
 }
 
-.first {
-  border: var(--border-main);
+div > div:not(:empty) {
   height: 100vh;
-
+  border: var(--border-main);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
 }
 
-.second {
-  border: var(--border-main);
-  height: 100vh;
-
+.btn {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid rgba(0,0,0,0.5);
+  cursor: pointer;
 }
 
-.third {
-  border: var(--border-main);
-  height: 100vh;
-
+.fourth-btn {
+  border-top: none;
+  border-bottom: 20px solid rgba(0, 0, 0, 0.5);
 }
 
-.fourth {
-  border: var(--border-main);
-  height: 100vh;
+.btn:hover {
+  border-top: 20px solid #000;
+}
 
+.fourth-btn:hover {
+  border-top: none;
+  border-bottom: 20px solid #000;
+}
+
+#first {
+  background-color: seagreen;
+}
+
+#second {
+  background-color: goldenrod;
+}
+
+#third {
+  background-color: mediumturquoise;
+}
+
+#fourth {
+  background-color: orangered;
 }
