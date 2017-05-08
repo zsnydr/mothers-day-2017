@@ -4,6 +4,8 @@
   "description": "Digital card for Mother's Day 2017",
   "main": "server/server.js",
   "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +19,10 @@
   },
   "homepage": "https://github.com/zsnydr/mothers-day-2017#readme",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
