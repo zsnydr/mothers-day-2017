@@ -20,12 +20,12 @@
 
 html, body {
   overflow: hidden;
-  overflow-y: hidden;
+  /*overflow-y: hidden;*/
 }
 
-body {
+/*body {
   position: relative;
-}
+}*/
 
 .btn {
   width: 0;
