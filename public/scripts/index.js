@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.btn').on('click', function() {
+  $(document).on('click', '.btn', function() {
     const lookup = {
       'first-btn': '#second',
       'second-btn': '#third',
