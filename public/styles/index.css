@@ -189,18 +189,18 @@ html, body {
 
 @media only screen and (max-width : 480px) {
   .btn {
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid rgba(255, 255, 255, 0.5);
+    border-left: 26px solid transparent;
+    border-right: 26px solid transparent;
+    border-top: 26px solid rgba(255, 255, 255, 0.5);
   }
   .btn:hover {
-    border-top: 20px solid #FFF;
+    border-top: 26px solid #FFF;
   }
   .first-content-span {
     font-size: 5em;
   }
   #first, #second, #third {
-    padding: 9%;
+    padding: 10.5%;
   }
   .first-btn, .second-btn, .third-btn {
     margin: 2% auto;
@@ -209,10 +209,10 @@ html, body {
     font-size: 4.5em;
   }
   .second-btn {
-    border-top: 20px solid rgba(0, 0, 0, 0.5);
+    border-top: 26px solid rgba(0, 0, 0, 0.5);
   }
   .second-btn:hover {
-    border-top: 20px solid #000;
+    border-top: 26px solid #000;
   }
   .third-content-span {
     padding: 2%;
@@ -224,10 +224,10 @@ html, body {
   }
   .third-btn {
     border-top: none;
-    border-bottom: 20px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 26px solid rgba(255, 255, 255, 0.5);
   }
   .third-btn:hover {
     border-top: none;
-    border-bottom: 20px solid #FFF;
+    border-bottom: 26px solid #FFF;
   }
 }
