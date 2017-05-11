@@ -44,6 +44,7 @@ function fadeInFirst() {
   }, 4000);
 }
 
+// this function is beyond ugly, but works for now
 function fadeInSecond() {
   var $secondContent = $('.second-content');
   $secondContent.css('border-color', '#000');
