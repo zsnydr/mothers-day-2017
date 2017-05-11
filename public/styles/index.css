@@ -206,7 +206,7 @@ html, body {
     margin: 2% auto;
   }
   .second-content-span {
-    font-size: 4.5em;
+    font-size: 4em;
   }
   .second-btn {
     border-top: 26px solid rgba(0, 0, 0, 0.5);
@@ -216,11 +216,11 @@ html, body {
   }
   .third-content-span {
     padding: 2%;
-    font-size: 4.75em;
+    font-size: 4.25em;
   }
   .third-content-span-two {
     padding: 1%;
-    font-size: 4em;
+    font-size: 3em;
   }
   .third-btn {
     border-top: none;
