@@ -52,7 +52,7 @@ function fadeInSecond() {
     $secondContentSpan.fadeIn(1000, function() {
       setTimeout(function() {
         $secondContentSpan.fadeOut(1000, function() {
-          $secondContentSpan.html('for all the sacrifices you make to keeep our family strong');
+          $secondContentSpan.html('for all the sacrifices you make to keep our family strong');
           $secondContentSpan.fadeIn(1000, function() {
             setTimeout(function() {
               $secondContentSpan.fadeOut(1000, function() {
@@ -60,7 +60,7 @@ function fadeInSecond() {
                 $secondContentSpan.fadeIn(1000, function() {
                   setTimeout(function() {
                     $secondContentSpan.fadeOut(1000, function() {
-                      $secondContentSpan.html('You are the one person I can always count on');
+                      $secondContentSpan.html('I know I can always count on you');
                       $secondContentSpan.fadeIn(1000, function() {
                         var $secondBtn = $('.second-btn');
                         $secondBtn.fadeIn(500);
