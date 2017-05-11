@@ -1,100 +1,172 @@
 @font-face {
-  font-family: myFirstFont;
+  font-family: ps;
   src: url(ps.woff);
 }
 
 *, *::before, *::after {
+  -moz-transition: all 1.25s ease-in;
+  -webkit-transition: all 1.25s ease-in;
+  transition: all 1.25s ease-in;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-}
-
-:root {
-  --border-main: 1px solid #000;
 }
 
 ::-webkit-scrollbar { 
   display: none; 
 }
 
-#app {
-  border: var(--border-main);
+/*LEAVE THIS????????*/
+html, body {
+  overflow: hidden;
 }
 
-
-div > div:not(:empty) {
+#first, #second, #third, #fourth {
   height: 100vh;
-  border: var(--border-main);
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5%;
 }
 
 .btn {
-  width: 0; 
-  height: 0; 
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid rgba(0,0,0,0.5);
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid rgba(255, 255, 255, 0.5);
   cursor: pointer;
-}
-
-.fourth-btn {
-  border-top: none;
-  border-bottom: 20px solid rgba(0, 0, 0, 0.5);
+  transition: none;
+  display: none;
 }
 
 .btn:hover {
-  border-top: 20px solid #000;
+  border-top: 30px solid #FFF;
 }
 
-.fourth-btn:hover {
-  border-top: none;
-  border-bottom: 20px solid #000;
-}
+/*FIRST*/
 
 #first {
-  background-color: seagreen;
+  background-image: url('http://imagesofrmnp.com/images/large/Autumns-Last-Dawn-L.jpg');
+  background-size: cover;
+  padding: 4%;
 }
 
-#first > span {
-  font-family: myFirstFont;
-  font-size: 14em;
-  color: #FFF;
+.first-content {
+  height: 100%;
+  border: 7px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
+.first-content-span {
+  font-family: ps;
+  font-size: 12em;
+  color: transparent;
+  padding: 2% 1% 0% 1%;
+}
+
+.horizontal-line {
+  width: 80%;
+  margin: 2% auto 0 auto;
+  border-top: 2px solid transparent;
+}
+
+.first-btn {
+  margin: 1.5% auto;
+}
+
+/*SECOND*/
 
 #second {
-  background-color: goldenrod;
+  padding: 4%;
+  background: linear-gradient(to top right, #F46C62, #93A9CF);
 }
+
+.second-content {
+  height: 100%;
+  border: 7px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
+  text-align: center;
+}
+
+.second-content-span {
+  transition: none;
+  color: #000;
+  font-family: ps;
+  font-size: 9em;
+  display: none;
+}
+
+.second-btn {
+  margin: 1.5% auto;
+  border-top: 30px solid rgba(0, 0, 0, 0.5);
+}
+
+.second-btn:hover {
+  border-top: 30px solid #000;
+}
+
+/*THIRD*/
 
 #third {
-  background-color: mediumturquoise;
+  background-image: url('http://eskipaper.com/images/grand-tetons-sunset-1.jpg');
+  padding: 4%;
 }
 
-#fourth {
-  background-color: orangered;
+.third-content {
+  height: 100%;
+  border: 7px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
+.third-content-span {
+  font-family: ps;
+  color: transparent;
+  padding: 2% 1% 0% 1%;
+  font-size: 12em;
+}
+
+.third-content-span-two {
+  font-family: ps;
+  color: transparent;
+  padding: 2% 1% 0% 1%;
+  font-size: 8em;
+}
+
+.third-btn {
+  border-top: none;
+  border-bottom: 30px solid rgba(255, 255, 255, 0.5);
+  margin: 1.5% auto;
+}
+
+.third-btn:hover {
+  border-top: none;
+  border-bottom: 30px solid #FFF;
+}
+
+/*Media Queries*/
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
-  #first > span {
-    font-size: 6em;
-  }
-
-  div > div:not(:empty) {
-    height: 100vh;
+  span {
+    font-size: 1em;
   }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
-  #first > span {
-    font-size: 2em;
+  span {
+    font-size: 3em;
   }
-
 }
 
